@@ -1,0 +1,54 @@
+<html> 
+<body> 
+<p id="demo"></p> 
+<p>Enter a number</p> 
+<input type="text" id="Text1" name="TextBox1"> 
+<br> 
+<br> 
+<input type="text" id="Text2" name="TextBox2"> 
+<input type="button" name="clickbtn" value="square root" onclick="sq()" onclick="ceil()"> <br> 
+<br> 
+<input type="text" id="Text3" name="TextBox3"> 
+<input type="button" name="clickbtn" value="ceiling" onclick="ceil()"> <br> 
+<br> 
+<input type="text" id="Text4" name="TextBox4"> 
+<input type="button" name="clickbtn" value="flooring" onclick="floor()"> <br> 
+<br> 
+<input type="text" id="Text5" name="TextBox5"> 
+<input type="button" name="clickbtn" value="absolute" onclick="abs()">
+Amal Jyothi College of Engineering Kanjirappally 12  
+20MCA133 WEB PROGRAMMING LAB Dept. of Computer Applications 
+<br> 
+<br> 
+<input type="text" id="Text6" name="TextBox6"> 
+<input type="button" name="clickbtn" value="rounding" onclick="round()"> <br> 
+<br> 
+<script type="text/javascript"> 
+function sq() 
+{ 
+var first_number = parseInt(document.getElementById("Text1").value); var r=Math.sqrt(first_number); 
+document.getElementById("Text2").value = parseFloat(r); } 
+function ceil() 
+{ 
+var first_number = parseInt(document.getElementById("Text1").value); var s=Math.ceil(first_number); 
+document.getElementById("Text3").value = parseFloat(s); } 
+function floor() 
+{ 
+var first_number = parseInt(document.getElementById("Text1").value); var a=Math.floor(first_number); 
+document.getElementById("Text4").value = parseFloat(a); } 
+function abs() 
+{ 
+var first_number = parseInt(document.getElementById("Text1").value);
+Amal Jyothi College of Engineering Kanjirappally 13  
+
+20MCA133 WEB PROGRAMMING LAB Dept. of Computer Applications var b=Math.abs(first_number); 
+document.getElementById("Text5").value = parseFloat(b); 
+} 
+function round() 
+{ 
+var first_number = parseInt(document.getElementById("Text1").value); var c=Math.round(first_number); 
+document.getElementById("Text6").value = parseFloat(c); 
+} 
+</script> 
+</body> 
+</html> 

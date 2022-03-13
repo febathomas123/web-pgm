@@ -1,0 +1,29 @@
+<html> 
+<head> 
+<script type="text/javascript"> 
+function formvalid(valid) 
+{ 
+if(document.getElementById("a").value == "") 
+alert("enter your name"); 
+else if(document.getElementById("b").value == "") 
+alert("enter a password"); 
+else if(document.getElementById("b").value != document.getElementById("c").value) alert("enter correct password"); 
+else if(document.getElementById("d").value == "") 
+alert("enter your address"); 
+else 
+alert("submitted");} 
+</script> 
+</head> 
+<body> 
+<form name="form"> 
+User Name:<input type="text" id="a"><br><br> 
+Password:<input type="text" id="b"><br><br> 
+Confirm Password:<input type="text" id="c"><br><br> 
+Address:<textarea rows="2" cols="25" id="d"></textarea><br><br>
+Amal Jyothi College of Engineering Kanjirappally 17  
+
+20MCA133 WEB PROGRAMMING LAB Dept. of Computer Applications <input type="button" value="Submit" onclick="formvalid()"> 
+<input type="reset" value="Clear"> 
+</form> 
+</body> 
+</html> 

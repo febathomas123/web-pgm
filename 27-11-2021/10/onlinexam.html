@@ -1,0 +1,34 @@
+<html> 
+<head> 
+<script type="text/javascript"> 
+var i=0; 
+function test() 
+{if(document.a.x[1].checked) 
+i=i+1; 
+if(document.a.y[0].checked) 
+i=i+1; 
+if(document.a.z[1].checked) 
+i=i+1; 
+alert("your score is"+i+"/3"); 
+} 
+</script> 
+</head> 
+<body> 
+<form name="a"> 
+<h3>How many days are there in a year?</h3> 
+<input type="radio" id="n" name="x" value="326"> <label for="choice-250">250</label> 
+<input type="radio" id="n" name="x" value="365"> <label for="choice-365">365</label> 
+<h3>Which animal is known as the ‘Ship of the Desert'?</h3> <input type="radio" id="n1" name="y" value="camel"> <label for="choice-camel">camel</label>
+Amal Jyothi College of Engineering Kanjirappally 22  
+
+20MCA133 WEB PROGRAMMING LAB Dept. of Computer Applications <input type="radio" id="n1" name="y" value="cow"> 
+<label for="choice-dog">dog</label> 
+<h3>How many letters are there in the English alphabet?</h3> 
+<input type="radio" id="n2" name="z" value="28"> 
+<label for="choice-20">20</label> 
+<input type="radio" id="n2" name="z" value="26"> 
+<label for="choice-26">26</label> 
+<input type="submit" value="Submit" onclick="test(this)"> 
+</form> 
+</body> 
+</html> 
